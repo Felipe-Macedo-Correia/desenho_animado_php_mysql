@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-style: normal;
+}
+
+html{
+    background-color: #0e0e11;
+
+}
+
+body{
+    background-color: #0e0e11;
+}
+
+nav{
+    width: 100%;
+    backdrop-filter: blur(2px);
+    padding: 15px 10%;
+}
+
+span{
+    font-weight: 600;
+    color: #fcd23e;
+}
+
+.logo{
+    font-size:23pt;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #0e0e11;
+}
+
+
+
+    
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.navLink{
+    padding: 0px 15px;
+    list-style: none;
+}
+
+.navLink a{
+    display: flex;
+    text-decoration: none;
+    font-size: 11.5pt;
+    font-weight: 600;
+    color: #fcd23e;
+}
+#nameNav{
+    color: #fcd23e;
+}
+
+.btnsNav i{
+    padding-left: 15px;    
+
+}
+
+
+.btnnn{
+    padding: 12px 18px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-weight: 600;
+    background-color: #fcd23e;
+    font-size: 11pt;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.021) ;
+    cursor: pointer;
+    transition: background-color  .2s ease;
+
+}
+
+.btnnn:hover{
+    background-color: #c0a235;
+    color:#0f0f13 ;
+
+}
+
+.navLink.ativa a{
+    color: #fcd23e;
+    border-bottom:3px solid  #fcd23e;
+    border-radius: 2px;
+}
+.text i{
+    font-size: 2.6rem;
+    padding: 0px 0px 0px 4px ;
+
+}
+
+
+#navM{
+    display: none;
+}
+
+#btnMobile{
+    display: none;
+}
+
+
+
+/*Carrosel --------------------------------------------------------------------------------------------------------- */
+
+
+
+#carouselExample{
+    height: auto;
+    overflow-y: hidden;
+    
+}
+
+
+.banner-img {
+    width: 100%; 
+    height:99vh; 
+    object-fit: cover; 
+    object-position: center center; 
+    filter: brightness(0.90); 
+    position: relative;
+    mask-image: 
+        linear-gradient(to right, transparent, #0f0f13 67%);
+    overflow-x: hidden;
+
+    
+}
+.banner{
+    height: 100%;
+
+}
+
+
+
+.banner-content, .banner-contentBob, .banner-contentRick {
+    position: absolute; 
+    bottom: 33%; 
+    left: 7%; 
+    color: #ffffff; 
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
+    font-size: 10.5pt; 
+    width: 450px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    min-width:300px;
+}
+
+
+
+
+
+.banner-content h1{
+    font-size: 26pt;
+
+}
+
+.btnAssistir {
+    display: flex;
+    padding: 14px 20px; 
+    background-color:  #c0a235 ; 
+    color: #f1f1f1; 
+    text-decoration: none; 
+    border-radius: 2px; 
+    align-items: center;
+
+}
+
+.banner-contentPokemon{
+
+    position: absolute; 
+    bottom: 40%; 
+    left: 7%; 
+    color: #ffffff; 
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
+    font-size: 10.5pt; 
+    min-width:300px;
+    width: 450px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+.btnAssistir i{
+    margin-right: 12px;
+    font-size: 15pt;
+
+}
+
+
+   
+
+.imgLogo, .imgLogoBob, .imgLogoSteven{
+    width: 500px;   
+    position: relative;
+    right: 28px;
+    margin-bottom: 15px;
+}
+
+
+.imgLogoRick{
+    width: 600px;
+    position: relative;
+    right: 50px;
+    top: 50px;
+    margin-bottom: 0px;
+}
+
+.imgLogoSteven{
+    width: 500px;   
+    position: relative;
+    right: 28px;
+    margin-bottom: 15px;
+}
+
+
+.carousel-fade .carousel-item .banner::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%; /* Ajuste a altura do gradiente conforme desejado */
+    background: linear-gradient(to bottom, transparent, #0e0e11);
+    z-index: 1; /* Assegura que o gradiente fique acima da imagem */
+}
+
+
+/* Fim do carrosel  ---------------------------------------------------------------------------------------------------------*/
+
+
+/* Card Principal -----------------------------------------------------------------------------------------------------------*/
+
+
+
+.iconesPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+.iconesPrincipal::before{
+    content: '';
+    width: 90%;
+    height: 1px;
+    left: 10;
+    bottom: 42px;
+    background-color: #1e1e27;
+ 
+    position: absolute;
+
+}
+
+.Lançamentos{
+    background-color: #0e0e11;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+
+.cards{
+    width: 270px;
+    background-color: #0e0e11;
+    margin: 20px;
+    border-radius: 2px;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    justify-content: center ;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+
+}
+
+
+
+.cards:hover{
+    transform: scale(1.08);
+
+}
+
+.cards p{
+    font-family: sans-serif;
+    color: #f1f1f1;
+    font-weight: 500;
+    font-size: 10.5pt;
+    padding-top: 4px;
+
+}
+
+.cardsNome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cards img{
+    height: 400px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.cardsNome h2{
+    font-size: 10.5pt;
+    color: #9a9a9a  ;
+    font-family: sans-serif;
+
+}
+
+.iconLança{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #c0a235;
+    margin-top: 5%;
+    padding: 20px 50px;
+    font-size: 25pt;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.021);
+    font-weight: 600;
+    outline: none;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 5%;
+}
+
+.iconLança:hover{
+    transform: scale(1.03);
+
+}
+
+.iconLança img{
+    width: 50px;
+    height: 50px;
+
+}
+
+.titleAntigos{
+    color: #ffffff;
+    padding-top: 5%;
+    padding-left: 25px;
+}
+
+
+.titleAntigos h1{
+    font-size: 20pt;
+
+}
+
+.titleAntigos p{
+    color: #9a9a9a;
+    font-size: 9.5pt;
+
+}
+
+
+
+.cardsAntigos{
+    background-color: #0e0e11;
+    display: flex;
+    justify-content: space-around   ;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+/* Responsivação NAVBAR -------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1120px){
+    .navLinks,
+    .navBar .btnnn{
+        display: none;
+    }
+
+    #btnMobile{
+        display: block;
+        background-color: transparent;
+        color:#049494 ;
+        border: none;
+        font-size: 20pt;
+        
+    }
+
+
+    #navM.active{
+        padding-top: 100px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(20px);
+        box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.021);
+        position: fixed;
+        top: 0;
+        z-index: 998;
+    }
+
+    .navLinksMobile{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 5%;
+    }
+
+    .navLink{
+        padding: 10px 0px;
+        text-align: center;
+
+ }
+}
+
+/* Responsa Geral  ----------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1337px){
+   .banner-content, .banner-contentPokemon{
+    width: 230px;
+   top: 200px;
+   font-size: 10pt;
+   }
+
+   .imgLogo {
+    width: 370px;
+
+   }
+
+   .imgLogoBob{
+    width: 350px;
+   }
+
+   .imgLogoRick{
+    width: 370px;
+    right: 20px;
+    margin-bottom: 10px;
+
+   }
+
+  
+
+
+   
+}
+@media screen and (max-width: 1118px){
+    .banner-content p, .banner-contentPokemon p , .banner-contentBob p, .banner-contentRick p{
+        display: none;
+
+
+    }
+    .imgLogo,  .imgLogoBob, .imgLogoRick{
+        margin-bottom: 30px;
+
+    }
+
+    .btnAssistir{
+        padding: 15px 40px;
+
+    }
+
+    .imgLogoSteven{
+        width: 300px;
+
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    #carouselExample{
+        width: 100%;
+
+    }
+
+    .imgLogoSteven{
+            width: 300px;
+            right: 10px;
+
+    }
+    
+
+}
+
+@media screen and (max-width: 320px){
+    .banner-img{
+        margin-top: 20%;
+    
+        
+    }
+
+    
+
+    .banner{
+        min-width: 100%;
+    }
+
+    
+
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .imgLogo, .imgLogoBob, .imgLogoRick, .imgLogoSteven{
+        display: none;
+
+    }
+
+    .btnAssistir{
+       display: none;
+    }
+
+
+}
+
+
+
+
+
+/* Responsivação Bob  */
+
+@media screen and (max-width: 1512px){
+
+    .imgLogoBob{
+        width:400px;
+    
+    }
+
+    .banner-contentBob{
+        width: 230px;
+        top: 200px;
+        font-size: 10pt;
+
+    }
+       
+}
+
+@media screen and (max-width: 1512px){
+    .imgLogoBob{
+        width:350px;
+    
+    }
+
+    .banner-contentBob{
+        width: 230px;
+        top: 220px;
+        font-size: 10pt;
+
+    }
+
+}
+
+
+/*Responsa Cards---------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 865px){
+    .iconesPrincipal::before{
+        width: 0;
+        height: 0;
+    }
+
+    .iconLança{
+        padding: 10px 20px;
+        font-size: 18pt;
+
+    }
+
+}
+
+@media screen and (max-width: 559px){
+    .iconLança{
+        padding: 4px 11px;
+        font-size: 14pt;
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 401px){
+    .iconLança i{
+        display: none;
+       
+
+    }
+
+    .iconLança{
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+    }
+
+
+}
+
+
+
+

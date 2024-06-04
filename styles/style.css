@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+nav{
+    width: 100%;
+    background-color: #0e0e11;
+    padding: 23px 10%;
+}
+
+.loginerror{
+    color: #fcd23e;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.navLink{
+    padding: 0px 15px;
+    list-style: none;
+}
+
+.navLink a{
+    display: flex;
+    text-decoration: none;
+    font-size: 12.5pt;
+    font-weight: 600;
+    color: #049494;
+}
+
+.logo{
+    font-size:25pt;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.btnnn{
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    color: #0e0e11;
+    background-color: #fcd23e;
+    font-size: 9pt;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.021) ;
+    cursor: pointer;
+    transition: background-color  .2s ease;
+}
+
+.btnnn:hover{
+    background-color: #d1af35;
+    color:#0e0e11 ;
+
+}
+
+.navLink.ativa a{
+    color: #04cac1;
+    border-bottom:3px solid  #00ffff;
+    border-radius: 2px;
+}
+
+main{
+   background-color: #0e0e11;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    width: 50%;
+    height: 60vh;
+  
+
+}
+
+h1{
+    color: #ffffff;
+
+}
+
+.form-image{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fcd23e;
+    border-radius: 9px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.form-image img{
+   width: 22rem;
+   min-width: 19rem;
+   
+
+}
+
+.form{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 55px 40px;
+    border-radius: 9px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 1px solid #18181f;
+
+}
+
+.extras-login{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9pt;
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+}
+
+.extras-login label input{
+    margin: 0px 5px 0px 0px;
+    color: #ffffff;
+   
+}
+
+.extras-login a{
+    text-decoration: none;
+    color: #fcd23e;
+
+}
+
+.extras-login a:hover{
+    text-decoration: underline;
+
+}
+
+.imgBloquinho{
+    display: none;
+
+}
+
+
+
+
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    flex-direction: column;
+}
+
+
+
+.input-group{
+    width: 100%;
+   
+}
+
+.input-box{
+    padding: 15px 0px;
+}
+
+.input-box input::placeholder{
+    color: #3f4561;
+    font-weight: 100;
+    font-size: 9pt;
+}
+
+
+.input-box input{
+    background-color: #1e1e27;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 9pt;
+
+}
+
+.form-header{
+    width: 100%;
+
+}
+
+.socialBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 10px;
+   
+   
+}
+
+.socialBtn button{
+    background-color: #1e1e27;
+    color:  #ffffff;  ;
+    border: 1px solid  #18181f;
+    cursor: pointer;
+}
+
+.socialBtn i{
+    font-size: 10.5pt;
+
+}
+
+.socialBtn::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 55px;
+    height: 1px;
+    background-color: #18181f;
+    position: absolute;
+    bottom: 0;
+    border-radius: 30px;
+
+
+}
+
+.socialBtn button{
+    padding: 10px 1.6rem;
+    border-radius: 5px;
+    transition: background 0.5s ease-in-out;
+
+}
+
+ .google:hover{
+    background-color: rgb(30, 198, 30);
+}
+
+.twitch:hover{
+    background-color: #9347ff;
+}
+
+.instagram:hover{
+
+    background-color: #d52e54;
+    transition: background 0.1s ease-in-out;
+
+}
+
+.discord:hover{
+    background-color: #5562ea;
+
+
+}
+
+.continue-button{
+    margin-top: 2rem;
+    width: 100%;
+
+}
+
+.continue-button button{
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 8px;
+    background-color: #fcd23e;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    font-size: 11.5pt;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1045px){
+    .container{
+        width: 100%;
+        height: 100vh;
+
+    }
+
+}
+
+@media screen and (max-width: 989px){
+    
+    .container{
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-image {
+        display: none;
+    }
+
+    .imgBloquinho{
+        display: block;
+
+
+    }
+
+    main{
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .imgBloquinho{
+        margin-top:50px ;
+
+    }
+
+
+    @media screen and (max-width: 550px){
+        .imgBloquinho{
+            display: none;
+
+        }
+
+        main{
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+
+        }
+        
+        .form{
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+
+        }
+
+    }
+
+    @media screen and (max-width: 360px){
+        .socialBtn button{
+            padding: 10px 17px;
+
+        }
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
